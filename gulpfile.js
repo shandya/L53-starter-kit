@@ -1,4 +1,5 @@
 const elixir = require('laravel-elixir');
+const pug = require('gulp-pug');
 
 require('laravel-elixir-vue-2');
 
@@ -15,5 +16,21 @@ require('laravel-elixir-vue-2');
 
 elixir(mix => {
     mix.sass('app.scss')
-       .webpack('app.js');
+       .sass('docs.scss')
+       .webpack('app.js')
+       .task('pug', 'resources/assets/pug/**');
+});
+
+gulp.task('pug', () => {
+  gulp.src([
+    'resources/assets/pug/components/**/*.pug',
+    '!resources/assets/pug/components/_includes/*.pug',
+    'resources/assets/pug/**/*.pug',
+    '!resources/assets/pug/layout.pug',
+    '!resources/assets/pug/_includes/*.pug'
+  ])
+  .pipe(pug({
+    pretty: true
+  }))
+  .pipe(gulp.dest('public/html/', { ext: '.html' }))
 });
