@@ -1,37 +1,26 @@
+// Colors
+$red: #dd3300;
+$dark-red: #a50f0f;
+$dark-gray: #444;
+$ultra-light-gray: #efefef;
 
-// Body
-$body-bg: #f5f8fa;
+$blue: #124797;
+$white: #ffffff;
 
-// Borders
-$laravel-border-color: darken($body-bg, 10%);
-$list-group-border: $laravel-border-color;
-$navbar-default-border: $laravel-border-color;
-$panel-default-border: $laravel-border-color;
-$panel-inner-border: $laravel-border-color;
+//  Font Colors
+$base-font-color: $dark-gray;
+$accent-color: $red;
+$accent-color-hover: darken($accent-color, 10%);
+$accent-color-dark: darken($accent-color, 20%);
+$complement-color: $blue;
+$background-color: $white;
 
-// Brands
-$brand-primary: #3097D1;
-$brand-info: #8eb4cb;
-$brand-success: #2ab27b;
-$brand-warning: #cbb956;
-$brand-danger:  #bf5329;
+// Font Family
+$lato: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-// Typography
-$font-family-sans-serif: "Raleway", sans-serif;
-$font-size-base: 14px;
-$line-height-base: 1.6;
-$text-color: #636b6f;
+$base-font-family: $lato;
+$header-font-family: $lato;
 
-// Navbar
-$navbar-default-bg: #fff;
-
-// Buttons
-$btn-default-color: $text-color;
-
-// Inputs
-$input-border: lighten($text-color, 40%);
-$input-border-focus: lighten($brand-primary, 25%);
-$input-color-placeholder: lighten($text-color, 30%);
-
-// Panels
-$panel-default-heading-bg: #fff;
+// $base-font-size: 1.6em;
+$base-font-size: 16px;
+$base-line-height: $base-font-size * 1.5;

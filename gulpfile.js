@@ -16,8 +16,10 @@ require('laravel-elixir-vue-2');
 
 elixir(mix => {
     mix.sass('app.scss')
+       .sass('site.scss')
        .sass('docs.scss')
        .webpack('app.js')
+       .webpack('site.js')
        .task('pug', 'resources/assets/pug/**');
 });
 
