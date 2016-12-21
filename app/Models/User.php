@@ -3,7 +3,9 @@
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+use Cartalyst\Sentinel\Users\EloquentUser;
+
+class User extends EloquentUser
 {
     use Notifiable;
 
@@ -13,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'email', 'password', 'permission', 'last_login', 'first_name', 'last_name',
     ];
 
     /**

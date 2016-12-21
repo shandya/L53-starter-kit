@@ -4,7 +4,7 @@
 
 ## Includes
 - [ ] Sentinel
-- [ ] Intervention Image
+- [x] Intervention Image
 - [x] Debugbar
 - [x] jQuery
 - [x] Bootstrap
