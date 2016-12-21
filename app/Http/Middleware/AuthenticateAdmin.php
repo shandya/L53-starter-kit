@@ -22,7 +22,7 @@ class AuthenticateAdmin
         }
 
         session()->flash('info', 'You have to login first');
-        return redirect()->guest(route('home'));
+        return redirect()->guest(route('admin.login'));
 
     }
 }

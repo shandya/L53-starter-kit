@@ -11,6 +11,6 @@ class SiteController extends AdminController
 
     public function getIndex()
     {
-        return 'Admin';
+        return view('admin.index');
     }
 }

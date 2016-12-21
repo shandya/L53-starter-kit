@@ -1,9 +1,24 @@
 <?php
 
+if ( ! function_exists('assets_url'))
+{
+  /**
+   * Get the URL to an asset
+   *
+   * @param  string  $path
+   * @param  bool    $secure
+   * @return string
+   */
+  function assets_url($asset)
+  {
+    return asset('assets/' . ltrim($asset, '/'));
+  }
+}
+
 if (! function_exists('uploads')) {
     /**
      * Generate the URL to uploads path
-     * 
+     *
      * @param  string $upload
      * @return string
      */
@@ -19,7 +34,7 @@ if (! function_exists('uploads')) {
 if (! function_exists('uploads_path')) {
     /**
      * Generate the path to uploads file
-     * 
+     *
      * @param  string $upload
      * @return string
      */
