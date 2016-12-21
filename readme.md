@@ -3,7 +3,7 @@
 ***Work In Progress***
 
 ## Includes
-- [ ] Sentinel
+- [x] Sentinel
 - [x] Intervention Image
 - [x] Debugbar
 - [x] jQuery
